@@ -126,3 +126,14 @@ query = df_parsed.writeStream \
  
 print("✅ Streaming started.")
 query.awaitTermination()
+
+
+
+# Install all dependencies
+# sudo wget https://repo1.maven.org/maven2/net/snowflake/spark-snowflake_2.12/2.11.0-spark_3.3/spark-snowflake_2.12-2.11.0-spark_3.3.jar -P /usr/lib/spark/jars/
+# sudo wget https://repo1.maven.org/maven2/net/snowflake/snowflake-jdbc/3.13.30/snowflake-jdbc-3.13.30.jar -P /usr/lib/spark/jars/
+# sudo wget https://awslabs-code-us-east-1.s3.amazonaws.com/spark-sql-kinesis-connector/spark-streaming-sql-kinesis-connector_2.12-1.2.1.jar -P /usr/lib/spark/jars/
+# sudo chmod 755 /usr/lib/spark/jars/spark-streaming-sql-kinesis-connector_2.12-1.2.1.jar
+# then run the file
+# spark-submit   --master local[*]   --jars /usr/lib/spark/jars/snowflake-jdbc-3.13.30.jar,/usr/lib/spark/jars/spark-snowflake_2.12-2.9.0-spark_3.1.jar   --packages com.qubole.spark:spark-sql-kinesis_2.12:1.2.0_spark-3.0 kinesis_to_snowflake_s3.py
+

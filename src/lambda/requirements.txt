@@ -1,0 +1,8 @@
+# AWS SDK for Lambda
+boto3>=1.28.0
+
+# HTTP requests
+requests>=2.31.0
+
+# JSON handling
+jsonschema>=4.17.0

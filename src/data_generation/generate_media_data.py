@@ -134,3 +134,5 @@ if __name__ == "__main__":
     user_ids = generate_demographics()
     generate_ad_revenue(channel_id_map)
     generate_viewership_logs(channel_id_map, user_ids, num_records=10000)  # Adjust as needed
+
+
